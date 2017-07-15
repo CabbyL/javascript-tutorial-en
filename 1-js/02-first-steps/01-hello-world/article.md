@@ -11,7 +11,7 @@ So first, let's see how to attach a script to a webpage. For server-side environ
 
 ## The "script" tag
 
-JavaScript programs can be inserted in any place of HTML with the help of the `<script>` tag.
+JavaScript programs can be inserted in place of HTML with the help of the `<script>` tag.
 
 For instance:
 
@@ -37,7 +37,7 @@ For instance:
 ```
 
 ```online
-You can run the example by clicking on the "Play" button in its right-top corner.
+You can run the example by clicking on the "Show" button in its right-top corner.
 ```
 
 The `<script>` tag contains JavaScript code which is automatically executed when the browser meets the tag.
@@ -73,10 +73,10 @@ If we have a lot of JavaScript code, we can put it into a separate file.
 The script file is attached to HTML with the `src` attribute:
 
 ```html
-<script src="/path/to/script.js"></script>
+<script src="/path/script.js"></script>
 ```
 
-Here `/path/to/script.js` is an absolute path to the file with the script (from the site root).
+Here `/path/script.js` is an absolute path to the file with the script (from the site root).
 
 It is also possible to provide a path relative to the current page. For instance, `src="script.js"` would mean a file `"script.js"` in the current folder.
 
@@ -89,15 +89,15 @@ We can give a full URL as well, for instance:
 To attach several scripts, use multiple tags:
 
 ```html
-<script src="/js/script1.js"></script>
-<script src="/js/script2.js"></script>
+<script src="/path?/script1.js"></script>
+<script src="/path?/script2.js"></script>
 …
 ```
 
 ```smart
 As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
 
-The benefit of a separate file is that the browser will download it and then store in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+The benefit of a separate file is that the browser will download? it and then store in its [cache](https://en.wikipedia.org/wiki/Web_cache).
 
 After this, other pages that want the same script will take it from the cache instead of downloading it. So the file is actually downloaded only once.
 
@@ -131,7 +131,7 @@ The example above can be split into two scripts to work:
 
 - We can use a `<script>` tag to add JavaScript code to the page.
 - The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- A script in an external file can be inserted with `<script src="path/script.js"></script>`.
 
 
 There is much more to learn about browser scripts and their interaction with the web-page. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves from it. We'll be using a browser as a way to run JavaScript, which is very convenient for online reading, but yet one of many.
