@@ -40,7 +40,7 @@ For instance:
 You can run the example by clicking on the "Play" button in its right-top corner.
 ```
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser meets the tag.
+The `<script>` tag contains JavaScript code which is automatically executed when the browser reads the tag.
 
 
 ## The modern markup
